@@ -8,6 +8,7 @@ Universal Styling
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -71,11 +72,12 @@ header li {
     padding: 10px 20px;
     font-family: 'Manrope', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 0.75px;
     font-size: 18px;
     color: white;
 }
 
-.hero {
+#hero {
     width: 100vw;
     max-height: 800px;
     overflow: hidden;
@@ -84,6 +86,55 @@ header li {
 .hero-window {
     width: 100vw;
 }
+
+/*---------------------------------
+
+Intro Section
+
+----------------------------------*/
+
+#intro {
+    background: #FCDFEB;
+    margin-top: -4px;
+    padding: 20px;
+}
+
+#intro p {
+    color: #49191D;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    float: left;
+    padding: 20px;
+  }
+  
+  .left {
+    width: 30%;
+  }
+  
+  .right {
+    width: 60%;
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
 
 footer {
     background-color: #BD7D94;
