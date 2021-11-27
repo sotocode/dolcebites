@@ -10,6 +10,23 @@ Universal Styling
     border: 0;
 }
 
+@font-face {
+    font-family: 'monita';
+    src: url('../fonts/monita.otf') format('truetype');
+}
+
+h1{
+    font-family: 'monita', cursive;
+    font-size: 3em;
+    color: #FCDFEB;
+}
+
+h2 {
+    font-family: 'monita', cursive;
+    font-size: 2em;
+    color: #49191D;
+}
+
 p {
     font-family: 'Manrope', sans-serif;
 }
