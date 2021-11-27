@@ -74,7 +74,7 @@ header li {
     text-transform: uppercase;
     letter-spacing: 0.75px;
     font-size: 18px;
-    color: white;
+    color: #fff;
 }
 
 #hero {
@@ -135,7 +135,7 @@ Intro Section
     }
   }
 
-  /*---------------------------------
+/*---------------------------------
 
 Products Section
 
@@ -163,7 +163,7 @@ Products Section
     }
   }
 
-    /*---------------------------------
+/*---------------------------------
 
 Gallery Section
 
@@ -174,6 +174,63 @@ Gallery Section
     padding: 20px;
 }
 
+/*---------------------------------
+
+Footer Section
+
+----------------------------------*/
+
 footer {
     background-color: #BD7D94;
+    color: #fff;
+    padding: 20px;
 }
+
+.footer-container {
+    max-width: 1920px;
+    padding: 0 50px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    color: #FCDFEB;
+    text-decoration: none;
+}
+
+.social {
+    font-size: 24px;
+    float: left;
+    padding: 20px;
+    width: 50%;
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.credit {
+    font-size: 14px;
+    float: right;
+    padding: 20px;
+    width: 50%;
+    text-align: right;
+    margin-top: 26px;
+}
+
+@media screen and (max-width: 650px) {
+    .social,
+    .credit {
+      width: 100%;
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+@media screen and (min-width: 651px) {
+    .social br {
+      display: none;  
+    }
+  }
