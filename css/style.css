@@ -129,12 +129,35 @@ Intro Section
     clear: both;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 650px) {
     .column {
       width: 100%;
     }
   }
 
+  /*---------------------------------
+
+Products Section
+
+----------------------------------*/
+
+#products {
+    background: #FAD5E5;
+    padding: 20px;
+}
+
+.columns {
+    float: left;
+    padding: 20px;
+    width: 33%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 650px) {
+    .columns {
+      width: 100%;
+    }
+  }
 
 footer {
     background-color: #BD7D94;
