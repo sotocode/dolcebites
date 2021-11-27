@@ -163,6 +163,17 @@ Products Section
     }
   }
 
+    /*---------------------------------
+
+Gallery Section
+
+----------------------------------*/
+
+#gallery {
+    background: #FAABC4;
+    padding: 20px;
+}
+
 footer {
     background-color: #BD7D94;
 }
