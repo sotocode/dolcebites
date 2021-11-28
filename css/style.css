@@ -20,7 +20,7 @@ h1{
     font-family: 'monita', cursive;
     font-size: 40px;
     color: #FCDFEB;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 h1,
@@ -36,6 +36,7 @@ h2 {
 
 p {
     font-family: 'Manrope', sans-serif;
+    line-height: 26px;
 }
 
 .container {
@@ -77,15 +78,58 @@ header li {
     color: #fff;
 }
 
-#hero {
-    width: 100vw;
-    max-height: 800px;
-    overflow: hidden;
-}
+/*---------------------------------
 
-.hero-window {
+Video
+
+----------------------------------*/
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    max-height: 700px;
     width: 100vw;
-}
+    overflow: hidden;
+    background: #49191D;
+  }
+
+  #video {
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: -1em;
+  }
+
+  #play-pause {
+    position: absolute;
+    bottom: 5%;
+    right: 70px;
+    padding-top: 20px;
+    border: none;
+    border-radius: 40px;
+    background-color: transparent;
+    margin: auto;
+    z-index: 1;
+  }
+
+  #play-pause-center {
+    position: absolute;
+    top: 40%;
+    right: 45%;
+    border: none;
+    border-radius: 40px;
+    background-color: transparent;
+    margin: auto;
+    z-index: 1;    
+  }
+  
+  #play-pause:hover {
+    color: #FCDFEB;
+  }
+
+  .video-message {
+    color: #fff;
+  }
 
 /*---------------------------------
 
@@ -95,8 +139,7 @@ Intro Section
 
 #intro {
     background: #FCDFEB;
-    margin-top: -4px;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
 }
 
 #intro p {
@@ -236,7 +279,7 @@ footer {
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1920px;
     font-family: 'Manrope', sans-serif;
     margin: 0 auto;
 }

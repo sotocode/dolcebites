@@ -25,10 +25,20 @@
             </header>
         </div>
         <main>
-            <section id="hero">
-                
-                    <img src="images/hero.jpg" alt="Strawberries up close" class="hero-window">
-                
+            <section>
+                <div class="video-container">
+                    <div id="video-controls">
+                        <button type="button" id="play-pause" title="Click here to pause or play video" aria-label="pause or play background video"> 
+                            <img class="pause" src="images/ic_pause_circle_filled_48px.png" alt="Play-pause button for video"/> 
+                        </button>
+                    </div>
+                    <video loop id="video" poster="/img/hero.jpg" preload="auto" 
+                    autoplay="" muted="" class="fillWidth" aria-describedby="video-info" 
+                    aria-label="Video of strawberries">
+                    <source src="media/video.mp4" type="video/mp4">
+                    <p class="video-message">Your browser does not support the video tag. Please upgrade your browser.</p>
+                    </video>
+                </div>
             </section>
 
             <section id="intro">
@@ -42,7 +52,7 @@
                         <p>Condoleo’s strawberries are freshly grown on a local produce farm in South Miami and are certified organic.</p>
                     </div>
                 </div>
-            </section>
+            </section>   
 
             <section id="products">
                 <img src="images/drip.png" alt="" width="100%" class="drip">
@@ -83,4 +93,30 @@
                 </div>
             </footer>
         </main>
+        <script type="text/javascript">
+            window.onload = function () {
+                // Video
+                var video = document.getElementById("video");
+                // Buttons
+                var playButton = document.getElementById("play-pause");
+                // playButton.addEventListener("hover",function(){
+                //     alert('hi');
+                // });
+                // Event listener for the play/pause button
+                playButton.addEventListener("click", function () {
+                    if (video.paused == true) {
+                        // Play the video
+                        video.play();
+                        // Update the button text to 'Pause symbol'
+                        playButton.innerHTML = '<img class="pause" src="images/ic_pause_circle_filled_48px.png" alt="Press pause button to pause video"/>';
+                    } else {
+                        // Pause the video
+                        video.pause();
+                        // Update the button text to 'Play symbol'
+                        playButton.innerHTML = '<img class="play" src="images/ic_play_circle_filled_48px.png" alt="Press play button to play video"/>';
+                    }
+                });
+            }
+            </script>
     </body>
+</html>
