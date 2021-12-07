@@ -124,7 +124,7 @@ Video
   }
   
   #play-pause:hover {
-    color: #FCDFEB;
+    cursor: pointer;
   }
 
   .video-message {
