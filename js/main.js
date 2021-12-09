@@ -14,12 +14,12 @@ window.onload = function () {
             // Play the video
             video.play();
             // Update the button text to 'Pause symbol'
-            playButton.innerHTML = '<img class="pause" src="images/ic_pause_circle_filled_48px.png" alt="Press pause button to pause video"/>';
+            playButton.innerHTML = '<img class="pause" src="images/pause_circle_filled_48px.png" alt="Press pause button to pause video"/>';
         } else {
             // Pause the video
             video.pause();
             // Update the button text to 'Play symbol'
-            playButton.innerHTML = '<img class="play" src="images/ic_play_circle_filled_48px.png" alt="Press play button to play video"/>';
+            playButton.innerHTML = '<img class="play" src="images/play_circle_filled_48px.png" alt="Press play button to play video"/>';
         }
     });
 }
