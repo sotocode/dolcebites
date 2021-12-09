@@ -83,19 +83,11 @@ header li {
 #contact {
   background: #FAD5E5;
   padding: 20px;
+  height: 100vh;
 }
 
 #contact p {
   font-size: 20px;
-}
-
-#contact p::after {
-  content: "\f004";
-  color: #49191D;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900; 
-  padding-left: 5px;
-  font-size: 18px;
 }
 
 .container-contact {
@@ -106,68 +98,11 @@ header li {
 
 .contact-form {
   background: #FAABC4;
-  padding: 20px 20px 10px 20px;
+  padding: 20px;
   max-width: 700px;
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Manrope', sans-serif;
   margin: 30px auto;
 }
-
-footer {
-  background-color: #BD7D94;
-  color: #fff;
-  padding: 20px;
-}
-
-.footer-container {
-  max-width: 1920px;
-  font-family: 'Manrope', sans-serif;
-  margin: 0 auto;
-}
-
-.footer-container a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-container a:hover {
-  color: #FCDFEB;
-  text-decoration: none;
-}
-
-.social {
-  font-size: 24px;
-  float: left;
-  padding: 20px;
-  width: 50%;
-  text-align: left;
-  vertical-align: text-top;
-}
-
-.credit {
-  font-size: 14px;
-  float: right;
-  padding: 20px;
-  width: 50%;
-  text-align: right;
-  margin-top: 26px;
-}
-
-@media screen and (max-width: 650px) {
-  .social,
-  .credit {
-    width: 100%;
-    text-align: center;
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 651px) {
-  .social br {
-    display: none;  
-  }
-}
-
-
 
 </style>
 
@@ -190,11 +125,3 @@ footer {
         </div>
     </div>
 <section>
-<footer>
-    <div class="footer-container row">
-        <div class="social">
-            <a href="https://www.instagram.com/dolcebites.co/" target="_blank"><i class="fab fa-instagram fa-2x"></i> <br>@dolcebites.co</a>
-        </div>
-        <div class="credit">Website by <a href="http://www.sotocode.com/" target="_blank">SOTOCODE</a></div></div>
-    </div>
-</footer>
