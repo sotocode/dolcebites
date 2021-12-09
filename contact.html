@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dolce Bites</title>
+        <meta name="keywords" content="chocolate strawberries miami dipped covered sweets gift coral gables cake dessert" />
+        <meta name="description" content="Gourmet chocolate covered delicacies made to order with fresh grown strawberries from our local farms in South Florida." />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+        <!-- Font Awesome-->
+        <script src="https://kit.fontawesome.com/bf20ac6a8e.js" crossorigin="anonymous"></script>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#fcdfeb">
+        <meta name="msapplication-TileColor" content="#fcdfeb">
+        <meta name="theme-color" content="#fcdfeb">
+        <!-- Java Script-->
+        <script src="js/main.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPYPB3FS6"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RJPYPB3FS6');
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1><a href="index.html">Dolce Bites</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="catalogue.pdf">Catalogue</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <main>
+
+            <section id="contact">
+                <div class="container-contact">
+                    <p>Thank you for your interest in Dolce Bites. If you have any questions or comments about our products, please send us a message and we'll get back to you shortly. We'd love to hear from you!</p>
+                    <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+                        <div class="name input-section">
+                            <label for="name" class="label_input_wrap">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Your Name"/>
+                        </div>
+        
+                        <div class="email input-section">
+                            <label for="email" class="label_input_wrap">Email</label>
+                            <input type="email" name="req_email" id="email" placeholder="Your Email Address"/>
+                        </div>
+        
+                        <div class="phone input-section">
+                            <label for="phone" class="label_input_wrap">Phone</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Your Phone Number"/>
+                        </div>
+        
+                        <div class="comments input-section">
+                            <label for="comments" class="label_input_wrap">Comments</label>
+                            <textarea name="comments" id="comments" rows="10" placeholder="Your Comment"></textarea>
+                        </div>
+        
+                        <div class="submit input-section">
+                            <input type="submit" value="Send" />
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-container row">
+                    <div class="social">
+                        <a href="https://www.instagram.com/dolcebites.co/" target="_blank"><i class="fab fa-instagram fa-2x"></i> <br>@dolcebites.co</a>
+                    </div>
+                    <div class="credit">Website by <a href="http://www.sotocode.com/" target="_blank">SOTOCODE</a></div></div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
