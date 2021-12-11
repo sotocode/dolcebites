@@ -224,6 +224,10 @@ Intro Section
 .left {
     width: 30%;
 }
+
+.left img {
+  width: 100%;
+}
   
 .right {
     width: 60%;
@@ -261,6 +265,10 @@ Products Section
     padding: 20px;
     width: 33%;
     text-align: center;
+}
+
+.columns img {
+  width: 100%;
 }
 
 @media screen and (max-width: 650px) {
