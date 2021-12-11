@@ -126,6 +126,7 @@ section#contact a:hover {
         <h1><a href="index.html">Dolce Bites</a></h1>
         <nav>
             <ul>
+                <li><a href="index.html#gallery">Gallery</a></li>
                 <li><a href="catalogue.pdf">Catalogue</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
