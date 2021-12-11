@@ -7,6 +7,7 @@
         <meta name="description" content="Gourmet chocolate covered delicacies made to order with fresh grown strawberries from our local farms in South Florida." />
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
         <!-- Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,36 +50,19 @@
         </div>
         <main>
 
-            <section id="contact">
-                <div class="container-contact">
-                    <p>Thank you for your interest in Dolce Bites. If you have any questions or comments about our products, please send us a message and we'll get back to you shortly. We'd love to hear from you!</p>
-                    <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
-                        <div class="name input-section">
-                            <label for="name" class="label_input_wrap">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Your Name"/>
-                        </div>
-        
-                        <div class="email input-section">
-                            <label for="email" class="label_input_wrap">Email</label>
-                            <input type="email" name="req_email" id="email" placeholder="Your Email Address"/>
-                        </div>
-        
-                        <div class="phone input-section">
-                            <label for="phone" class="label_input_wrap">Phone</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Your Phone Number"/>
-                        </div>
-        
-                        <div class="comments input-section">
-                            <label for="comments" class="label_input_wrap">Comments</label>
-                            <textarea name="comments" id="comments" rows="10" placeholder="Your Comment"></textarea>
-                        </div>
-        
-                        <div class="submit input-section">
-                            <input type="submit" value="Send" />
-                        </div>
-                    </form>
+            <section id="extra">
+                <div class="container-extra">
+                    <h2>LightBox</h2>
+                    <a href="images/photo1.jpg" data-lightbox="image-1" data-title="Strawberry"><img src="images/photo1.jpg" alt="Strawberry close-up"></a>
+
+                    <a href="images/photo2.jpg" data-lightbox="image-1" data-title="Cake-Pops"><img src="images/photo2.jpg" alt="Open box of cake-pops"></a>
+
+                    <a href="images/photo3.jpg" data-lightbox="image-1" data-title="Mint Chocolate Strawberries"><img src="images/photo3.jpg" alt="Open box of mint chocolate covered strawberries"></a>
+                    
+                    <a href="images/photo5.jpg" data-lightbox="image-1" data-title="Happy Birthday Box"><img src="images/photo5.jpg" alt="Open box of chocolate covered strawberries pink decoration"></a> 
                 </div>
             </section>
         </main>
+        <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
     </body>
 </html>
