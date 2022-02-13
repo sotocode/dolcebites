@@ -211,6 +211,16 @@ Intro Section
     margin-top: 8px;
 }
 
+article figcaption {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.7em;
+    text-align: center;
+    color: #49191D;
+    background-color: #FAABC4;
+    padding: 4px 10px;
+    margin-top: -5px;
+}
+
 .wrap {
     max-width: 1200px;
     margin: 0 auto;
