@@ -47,37 +47,112 @@ p {
 }
 
 header {
-    background: #BD7D94;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 99;
-}
-
-header nav {
-    float: right;
-    margin-right: 50px;
-    margin-top: 13px;
+  background-color: #BD7D94;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  z-index: 99;
 }
 
 header a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 header a:hover {
-    color: #FCDFEB;
+  color: #FCDFEB;
 }
 
-header li {
-    display: inline-block;
-    padding: 10px 20px;
-    font-family: 'Manrope', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
-    font-size: 18px;
-    color: #fff;
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.logo {
+ font-family: 'monita', cursive;
+ font-size: 1.5em;
+ display: inline-block;
+ padding-left: 20px;
+ height: 60px;
+ padding-top: 10px;
+}
+
+#hamnav {
+  width: 100%;
+  background: #BD7D94;
+}
+
+#hamitems a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #FAABC4;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+#hamitems a:hover { 
+  background: #49191D; 
+}
+
+#hamnav label {
+  float: right;
+  display: inline-block;
+  color: white;
+  background: #BD7D94;
+  font-style: normal;
+  font-size: 2em;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+#hamnav label:hover {
+  cursor: pointer;
+  color: #FCDFEB;
+}
+
+#hamitems { 
+  display: none; 
+}
+#hamnav input:checked ~ #hamitems { 
+  display: block; 
+}
+#hamburger { 
+  display: none; 
+}
+
+@media screen and (min-width: 768px){
+
+  #hamitems { 
+    display: flex;
+    height: 60px;
+    padding-right: 50px;
+  }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-top: 20px;
+  }
+
+  #hamitems a {
+    border-top: none;
+  }
+
+  #hamnav label, #hamburger { 
+    display: none; 
+  }
+
+  .logo {
+    float: left;
+    margin-right: 20%;
+    font-size: 2.1em;
+    padding-top: 0px;
+  }
 }
 
 #contact {
