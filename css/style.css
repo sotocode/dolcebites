@@ -394,23 +394,12 @@ Products Section
 
 #products {
     background: #FAD5E5;
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 50px 20px;
 }
 
 .drip {
     margin-top: -1px;
     width: 100%;
-}
-
-.columns {
-    float: left;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-}
-
-.columns img {
-  width: 100%;
 }
 
 .frame {
@@ -447,6 +436,24 @@ opacity: 0.15;
   transform: translate(-50%, -50%) rotateY(0deg);
   opacity: 1;
 }
+
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-content: flex-start;
+}
+
+.content {
+  align-self: stretch;
+  width: 100%;
+}
+
+.content img {
+  width: 100%;
+}
+
 
 /*---------------------------------
 
@@ -569,7 +576,6 @@ Contact Section
   color: #BD7D94;
   cursor: pointer;
   font-weight: 600;
-
 }
 
 .input-section {
@@ -635,6 +641,9 @@ Media Queries
 ----------------------------------*/
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .flexbox {
+    flex-direction: column;
+  }
 
 }
 
@@ -643,10 +652,6 @@ Media Queries
 }
 
 @media screen and (min-width: 769px) {
-
-  .columns {
-    width: 30%;
-  }
 
   /* (B) HORIZONTAL MENU ITEMS */
   #hamitems { 
