@@ -355,6 +355,7 @@ article figcaption {
 .wrap {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .column {
@@ -644,11 +645,15 @@ Media Queries
   .flexbox {
     flex-direction: column;
   }
-
+  .desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-
+  .desktop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -664,20 +669,20 @@ Media Queries
     flex-basis: 0;
     padding-top: 20px;
   }
-
   #hamitems a {
     border-top: none;
   }
-
   /* (C) HIDE HAMBURGER */
   #hamnav label, #hamburger { 
     display: none; 
   }
-
   .logo {
     float: left;
     margin-right: 20%;
     font-size: 2em;
     padding-top: 15px;
+  }
+  .mobile {
+    display: none;
   }
 }
