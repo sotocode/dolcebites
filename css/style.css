@@ -463,7 +463,7 @@ Gallery Section
 
 #gallery {
     background: #FAABC4;
-    padding: 20px;
+    padding: 0 20px 50px 20px;
 }
 
 .container-gallery {
