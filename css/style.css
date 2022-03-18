@@ -143,11 +143,6 @@ header a:hover {
   color: #FCDFEB;
 }
 
-.container {
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
 .logo {
  font-family: 'monita', cursive;
  font-size: 1.5em;
@@ -169,13 +164,17 @@ header a:hover {
   display: block;
   width: 100%;
   border-top: 1px solid #FAABC4;
-  padding: 10px;
+  padding: 15px;
   color: white;
   text-decoration: none;
   text-align: center;
   font-family: 'Manrope', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.75px;
+}
+
+#hamitems {
+  margin-top: 13px;
 }
 
 #hamitems a:hover { 
@@ -256,6 +255,12 @@ footer {
   margin-top: 26px;
 }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media screen and (max-width: 650px) {
   .social,
   .credit {
@@ -333,7 +338,7 @@ Intro Section
 
 #intro {
     background: #FCDFEB;
-    padding: 40px 20px 20px 20px;
+    padding: 50px 20px 20px 20px;
 }
 
 #intro p {
@@ -355,36 +360,28 @@ article figcaption {
 .wrap {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
-.column {
-    float: left;
-    padding: 20px;
-}
-  
-.left {
-    width: 30%;
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-content: flex-start;
 }
 
-.left img {
+.feature-image {
+  align-self: stretch;
   width: 100%;
 }
-  
-.right {
-    width: 60%;
+
+.feature-image img {
+  width: 100%;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-  }
+.feature-text {
+  align-self: stretch;
+  width: 100%;
 }
 
 /*---------------------------------
@@ -431,17 +428,16 @@ opacity: 0.15;
   background: rgba(255, 255, 255, 0);	
   opacity: 0;
   transition: all 0.4s ease-in;
-  
 }
+
 .frame:hover .details {
   transform: translate(-50%, -50%) rotateY(0deg);
   opacity: 1;
 }
 
-
 .flexbox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   align-content: flex-start;
 }
@@ -642,9 +638,6 @@ Media Queries
 ----------------------------------*/
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .flexbox {
-    flex-direction: column;
-  }
   .desktop {
     display: none;
   }
@@ -653,6 +646,19 @@ Media Queries
 @media (min-width: 481px) and (max-width: 768px) {
   .desktop {
     display: none;
+  }
+  .feature {
+    flex-direction: row;
+  }
+  .content {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .feature-image {
+    width: 40%;
+  }
+  .feature-text {
+    width: 60%;
   }
 }
 
@@ -663,6 +669,7 @@ Media Queries
     display: flex;
     height: 60px;
     padding-right: 50px;
+    margin-top: 0;
   }
   #hamitems a {
     flex-grow: 1;
@@ -678,11 +685,21 @@ Media Queries
   }
   .logo {
     float: left;
-    margin-right: 20%;
+    margin-right: 15%;
     font-size: 2em;
     padding-top: 15px;
   }
   .mobile {
     display: none;
+  }
+  .flexbox,
+  .feature {
+    flex-direction: row;
+  }
+  .feature-image {
+    width: 35%;
+  }
+  .feature-text {
+    width: 65%;
   }
 }
