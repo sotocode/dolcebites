@@ -79,7 +79,7 @@ p {
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -366,13 +366,14 @@ article figcaption {
 .feature {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   align-content: flex-start;
 }
 
 .feature-image {
   align-self: stretch;
   width: 100%;
+  padding: 0;
 }
 
 .feature-image img {
@@ -380,8 +381,9 @@ article figcaption {
 }
 
 .feature-text {
-  align-self: stretch;
+  align-self: center;
   width: 100%;
+  padding: 0;
 }
 
 /*---------------------------------
@@ -641,6 +643,12 @@ Media Queries
   .desktop {
     display: none;
   }
+  .feature-text {
+    padding: 20px 0 0 0;
+  }
+  .feature-image {
+    padding: 0;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -656,9 +664,11 @@ Media Queries
   }
   .feature-image {
     width: 40%;
+    padding: 20px 20px 20px 0;
   }
   .feature-text {
     width: 60%;
+    padding: 20px 20px 0 0;
   }
 }
 
@@ -685,7 +695,7 @@ Media Queries
   }
   .logo {
     float: left;
-    margin-right: 15%;
+    margin-right: 10%;
     font-size: 2em;
     padding-top: 15px;
   }
@@ -697,9 +707,11 @@ Media Queries
     flex-direction: row;
   }
   .feature-image {
-    width: 35%;
+    width: 30%;
+    padding: 20px;
   }
   .feature-text {
     width: 65%;
+    padding: 20px;
   }
 }
