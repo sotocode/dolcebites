@@ -504,11 +504,10 @@ Contact Section
 #contact {
   background: #FAD5E5;
   padding: 20px;
-  height: 100vh;
 }
 
 #contact p {
-  font-size: 20px;
+  font-size: 1.2em;
 }
 
 #contact p::after {
@@ -517,26 +516,38 @@ Contact Section
   font-family: "Font Awesome 5 Free";
   font-weight: 900; 
   padding-left: 5px;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .container-contact {
-  padding: 150px 0 50px 0;
+  padding: 50px 0 10px;
   margin: 0 auto;
   max-width: 700px;
 }
 
+.container-contact h2 {
+  word-spacing: 20px;
+}
+
+.container-contact p {
+  margin-top: 20px;
+}
+
 .contact-form {
   background: #FAABC4;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 40px 10px 20px;
   max-width: 700px;
   font-family: 'Manrope', sans-serif;
-  margin: 30px auto;
+  margin: 30px 0;
+}
+
+.contact-form input {
+  border-width: 0;
 }
 
 .label_input_wrap {
  display: block;
- font-size: 18px;
+ font-size: 1.1em;
  color: #49191D;
  padding-bottom: 5px; 
 }
@@ -545,7 +556,7 @@ Contact Section
   background: #BD7D94;;
   color: white;
   padding: 5px 20px;
-  font-size: 20px;
+  font-size: 1.3em;
   font-family: 'Manrope', sans-serif;
   border: #BD7D94 3px solid;
   border-radius: 3px;
@@ -563,8 +574,9 @@ Contact Section
 }
 
 input {
-  padding: 5px;
+  padding: 10px;
   width: 50%;
+  font-size: 1em;
 }
 
 input:nth-child(1) {
@@ -573,8 +585,14 @@ input:nth-child(1) {
 
 textarea {
   font-family: sans-serif;
-  padding: 5px;
+  font-size: 1em;
+  padding: 10px;
   width: 100%;
+  border-width: 0px;
+}
+
+.contact-form .submit {
+  margin-right: -20px;
 }
 
 /*---------------------------------
@@ -633,6 +651,12 @@ Media Queries
   footer {
     padding: 20px;
   }
+  input {
+    width: 100%;
+  }
+  input:nth-child(1) {
+    width: 100%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -653,6 +677,9 @@ Media Queries
   .feature-text {
     width: 60%;
     padding: 20px 20px 0 0;
+  }
+  input:nth-child(1) {
+    width: 50%;
   }
 }
 
