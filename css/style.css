@@ -74,7 +74,7 @@ h2 {
 
 p {
     font-family: 'Manrope', sans-serif;
-    line-height: 26px;
+    line-height: 1.625em;
     color: #49191D;
 }
 
@@ -276,7 +276,7 @@ Video
 
 /*---------------------------------
 
-Intro Section
+Intro and About Section
 
 ----------------------------------*/
 
@@ -288,7 +288,7 @@ Intro Section
 #intro p {
     color: #49191D;
     font-size: 1.2em;
-    margin-top: 8px;
+    margin-top: 15px;
 }
 
 article figcaption {
@@ -322,6 +322,8 @@ article figcaption {
 
 .feature-image img {
   width: 100%;
+  border: solid #FAABC4 10px;
+  margin-left: -10px;
 }
 
 .feature-text {
@@ -329,6 +331,32 @@ article figcaption {
   width: 100%;
   padding: 0;
 }
+
+
+.button {
+  background-color: #BD7D94;
+  border: 3px solid #BD7D94;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.2em;
+  margin: 10px 0;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 80%;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  border: 3px solid #BD7D94;
+  color: #BD7D94;
+}
+
 
 /*---------------------------------
 
@@ -519,10 +547,11 @@ Contact Section
   background: #BD7D94;;
   color: white;
   padding: 5px 20px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: 'Manrope', sans-serif;
   border: #BD7D94 3px solid;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 
 .submit input:hover {
@@ -686,6 +715,9 @@ Media Queries
   .feature-text {
     width: 65%;
     padding: 20px;
+  }
+  .button {
+    width: 30%;
   }
   .footer-wrap {
     flex-direction: row;
