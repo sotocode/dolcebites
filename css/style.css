@@ -287,7 +287,7 @@ Intro Section
 
 #intro p {
     color: #49191D;
-    font-size: 18px;
+    font-size: 1.2em;
     margin-top: 8px;
 }
 
@@ -360,7 +360,7 @@ opacity: 0.15;
 .frame .details {
   font-family: 'Manrope', sans-serif;
   color: #49191D;
-  font-size: 18px;
+  font-size: 1.125em;
   margin-top: 35%;
   width: 100%;
   height: 80%;	
@@ -572,7 +572,7 @@ Extra Section
 #extra h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 38px;
+  font-size: 2em;
 } 
 
 .container-extra {
@@ -587,7 +587,7 @@ Extra Section
 
 .lb-caption {
   font-family: 'Manrope', sans-serif !important;
-  font-size: 20px !important;
+  font-size: 1.25em !important;
 }
 
 .lb-number {
