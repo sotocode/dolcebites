@@ -205,7 +205,7 @@ header a:hover {
 }
 
 .container-contact {
-  padding: 50px 20px 10px;
+  padding: 50px 20px 5px 20px;
   margin: 0 auto;
   max-width: 700px;
   text-align: center;
