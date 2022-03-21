@@ -126,6 +126,7 @@ header a:hover {
   width: 100%;
   background: #BD7D94;
 }
+
 /* (A) BREAK INTO VERTICAL MENU */
 #hamitems a {
   box-sizing: border-box;
@@ -170,9 +171,11 @@ header a:hover {
 #hamitems { 
   display: none; 
 }
+
 #hamnav input:checked ~ #hamitems { 
   display: block; 
 }
+
 #hamburger { 
   display: none; 
 }
@@ -240,15 +243,15 @@ Video
     width: 100vw;
     overflow: hidden;
     background: #49191D;
-  }
+}
 
-  #video {
+#video {
     margin-left: 0px;
     width: 100%;
     margin-bottom: -1em;
-  }
+}
 
-  #play-pause {
+#play-pause {
     position: absolute;
     bottom: 5%;
     right: 70px;
@@ -258,9 +261,9 @@ Video
     background-color: transparent;
     margin: auto;
     z-index: 1;
-  }
+}
 
-  #play-pause-center {
+#play-pause-center {
     position: absolute;
     top: 40%;
     right: 45%;
@@ -269,15 +272,15 @@ Video
     background-color: transparent;
     margin: auto;
     z-index: 1;    
-  }
+}
   
-  #play-pause:hover {
+#play-pause:hover {
     cursor: pointer;
-  }
+}
 
-  .video-message {
+.video-message {
     color: #fff;
-  }
+}
 
 /*---------------------------------
 
@@ -337,7 +340,6 @@ article figcaption {
   padding: 0;
 }
 
-
 .button {
   background-color: #BD7D94;
   border: 3px solid #BD7D94;
@@ -361,7 +363,6 @@ article figcaption {
   border: 3px solid #BD7D94;
   color: #BD7D94;
 }
-
 
 /*---------------------------------
 
@@ -429,7 +430,6 @@ opacity: 0.15;
 .content img {
   width: 100%;
 }
-
 
 /*---------------------------------
 
@@ -518,8 +518,6 @@ About Section
 #about li {
   margin-top: 15px;
 }
-
-
 
 /*---------------------------------
 
