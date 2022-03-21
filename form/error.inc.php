@@ -60,9 +60,9 @@ h1 {
     font-size: 3em;
     color: #FCDFEB;
     padding-left: 30px;
+    display: none;
 }
 
-h1,
 nav {
     display: inline-block;
 }
@@ -426,6 +426,7 @@ footer {
 </style>
 <script src="https://kit.fontawesome.com/bf20ac6a8e.js" crossorigin="anonymous"></script>
 
+<h1>Dolce Bites Website</h1>
 <header>
     <div class="container">
         <!-- (A) MENU WRAPPER -->
