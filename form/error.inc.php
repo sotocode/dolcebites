@@ -437,8 +437,8 @@ footer {
         <!-- (C) MENU ITEMS -->
         <div id="hamitems">
             <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="index.html#gallery">Gallery</a>
-            <a href="catalogue.pdf">Catalogue</a>
             <a href="contact.html">Contact</a>
         </div>
         </nav>
